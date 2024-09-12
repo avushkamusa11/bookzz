@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_books">
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="com.fmi.bookzz.ui.books.BooksFragment"
+        android:label="Books"
+        tools:layout="@layout/fragment_books" />
+
+    <fragment
+        android:id="@+id/nav_my_library"
+        android:name="com.fmi.bookzz.ui.myLibrary.MyLibraryFragment"
+        android:label="My Library"
+        tools:layout="@layout/fragment_my_library" />
+
+    <fragment
+        android:id="@+id/nav_friends"
+        android:name="com.fmi.bookzz.ui.user.UsersFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.fmi.bookzz.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_goal"
+        android:name="com.fmi.bookzz.ui.goal.GoalFragment"
+        android:label="@string/goal"
+        tools:layout="@layout/fragment_goal" />
+
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.fmi.bookzz.ui.schedule.ScheduleFragment"
+        android:label="@string/schedule"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/nav_statistic"
+        android:name="com.fmi.bookzz.ui.statistic.StatisticFragment"
+        android:label="@string/statistic"
+        tools:layout="@layout/fragment_statistic" />
+
+    <fragment
+        android:id="@+id/nav_quotes"
+        android:name="com.fmi.bookzz.ui.quote.QuoteFragment"
+        android:label="@string/quotes"
+        tools:layout="@layout/fragment_quote" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.fmi.bookzz.ui.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+
+    <!--    <fragment-->
+<!--        android:id="@+id/fragment_pdf_viewer"-->
+<!--        android:name="com.fmi.bookzz.ui.book.PdfViewerFragment"-->
+<!--        android:label="PDF"-->
+<!--        tools:layout="@layout/fragment_pdf_viewer" />-->
+</navigation>

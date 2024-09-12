@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quote.QuoteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/viewOtherQuotesB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FRIENDS' QUOTES" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addQuoteTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quote" />
+
+            <EditText
+                android:id="@+id/addQuoteET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/selectBookTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Book" />
+
+            <Spinner
+                android:id="@+id/selectBookSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/isPrivateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is private" />
+
+            <CheckBox
+                android:id="@+id/addQuoteCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <Button
+                android:id="@+id/addQuoteB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myQuotesRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

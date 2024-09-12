@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bookListRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/background_gradient">
+
+    <!-- First Column: Image -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="viewBook"
+            android:src="@drawable/friends" />
+    </LinearLayout>
+
+    <!-- Second Column: Title, Author, and Rating -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/booksTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/booksAuthorTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/author"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="10"
+            android:scaleX="0.2"
+            android:scaleY="0.2"
+            android:padding="0dp"
+            android:isIndicator="true"/>
+
+        <TextView
+            android:id="@+id/booksStatusTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="@string/rating" />
+    </LinearLayout>
+
+    <!-- Third Column: Button -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/addToReadB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#856363"
+            android:onClick="addToRead"
+            android:text="@string/add_to_read"
+            android:background="@drawable/round_button"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="filter_options">
+        <item>To Read</item>
+        <item>Read</item>
+        <item>In progress</item>
+    </string-array>
+</resources>
